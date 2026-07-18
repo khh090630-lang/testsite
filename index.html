@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 알파폴드 단백질 뷰어</title>
+    
+    <!-- 1. 디자인 파일(style.css) 연결 -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- 2. 3D 단백질을 그려주는 라이브러리(3Dmol.js) 불러오기 -->
+    <script src="https://3dmol.org/build/3Dmol-min.js"></script>
+</head>
+<body>
+
+    <!-- 웹사이트 제목 -->
+    <header>
+        <h1>알파폴드 인슐린 구조 예측 결과</h1>
+        <p>target.cif 파일을 시각화한 화면입니다.</p>
+    </header>
+
+    <!-- 3. 단백질 3D 모델이 렌더링될 영역 (앱이 이 ID를 찾아서 그림) -->
+    <div id="protein_viewer_container">
+        <!-- 데이터를 불러오기 전 보여줄 메시지 -->
+        <p class="loading-msg">단백질 구조를 불러오는 중...</p>
+    </div>
+
+    <!-- 4. 기능 파일(app.js) 연결 -->
+    <script src="app.js"></script>
+</body>
+</html>
